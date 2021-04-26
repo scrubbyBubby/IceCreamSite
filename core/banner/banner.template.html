@@ -1,0 +1,14 @@
+<div class="{{'banner flex-column ' + bannerClass}}">
+  <div class="banner-title" data-ng-show="title">{{title}}</div>
+  <div class="banner-content" data-ng-show="content">{{content}}</div>
+  <div class="banner-info" data-ng-show="info">{{info}}</div>
+  <div class="banner-special-info" data-ng-show="specialInfo">
+    {{specialInfo}}
+  </div>
+  <div
+    class="{{'banner-special-info ' + extraSpecialInfoClass}}"
+    data-ng-show="extraSpecialInfo"
+  >
+    {{extraSpecialInfo}}
+  </div>
+</div>

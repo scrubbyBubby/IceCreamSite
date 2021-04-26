@@ -1,0 +1,16 @@
+.triple-bar {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.triple-bar svg {
+  fill: var(--dark-strawberry);
+}
+
+.triple-bar > div {
+  position: absolute;
+  display: "flex";
+  align-items: "center";
+}

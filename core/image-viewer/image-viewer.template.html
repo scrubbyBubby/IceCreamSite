@@ -1,0 +1,51 @@
+<div class="full-wrapper">
+  <div
+    id="{{viewer.masterId}}"
+    class="image-viewer-wrapper site-image"
+    style="max-width: 900px; box-shadow: none; width: calc(100% - 8px)"
+    data-ng-style="styles.wrapper"
+  >
+    <div
+      class="image-viewer"
+      data-ng-style="styles.wrapper"
+      id="{{viewer.wrapperId}}"
+    >
+      <div
+        class="flex-row image-spool"
+        id="{{viewerId}}"
+        data-ng-style="styles.spool"
+      >
+        <div
+          data-ng-repeat="url in imageUrls"
+          class="{{image.class}}"
+          data-ng-style="style"
+          data-ng-click="setBigPicture(url)"
+        >
+          <img src="{{url}}" alt="{{url}}" width="{{width}}" id="{{url}}" />
+        </div>
+      </div>
+    </div>
+    <div
+      class="left-arrow-cover"
+      data-ng-click="incrementImages(-1 * configuration.slideCount)"
+    >
+      <span class="left-arrow-icon">&#9654;</span>
+    </div>
+    <div
+      class="right-arrow-cover"
+      data-ng-click="incrementImages(configuration.slideCount)"
+    >
+      <span class="right-arrow-icon">&#9654;</span>
+    </div>
+    <div class="bottom-dot-indicator" data-ng-style="styles.dot">
+      <div
+        data-ng-repeat="url in imageUrls"
+        class="dot-indicator"
+        data-ng-class="{'active-dot':illuminated[url]}"
+        data-ng-click="setByUrl(url)"
+      >
+        &#8226;
+      </div>
+    </div>
+  </div>
+</div>

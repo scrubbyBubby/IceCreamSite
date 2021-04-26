@@ -1,0 +1,93 @@
+<div class="top-nav-bar-wrapper" style="color: #000000">
+  <div class="new-top-nav-bar">
+    <div>Spring Street Treats</div>
+    <div
+      class="space-left no-mobile invert-hover"
+      data-ng-click="scrollToSection('welcome')"
+    >
+      Welcome
+    </div>
+    <div
+      class="no-mobile invert-hover"
+      data-ng-click="scrollToSection('treatMenu')"
+    >
+      Treats
+    </div>
+    <div
+      class="no-mobile invert-hover"
+      data-ng-click="scrollToSection('foodMenu')"
+    >
+      Food
+    </div>
+    <div class="website-header-wrapper space-left no-mobile">
+      <div class="theme-choice-2 flex-row">
+        <div
+          class="secret-icon nep-icon"
+          data-ng-class="{'selected-theme': currentTheme === 'NEP'}"
+          data-ng-click="setTheme('NEP')"
+        ></div>
+        <div
+          class="secret-icon mcc-icon"
+          data-ng-class="{'selected-theme': currentTheme === 'MCC'}"
+          data-ng-click="setTheme('MCC')"
+        ></div>
+        <div
+          class="secret-icon rri-icon"
+          data-ng-class="{'selected-theme': currentTheme === 'RRI'}"
+          data-ng-click="setTheme('RRI')"
+        ></div>
+        <div
+          class="secret-icon scc-icon"
+          data-ng-class="{'selected-theme': currentTheme === 'SCC'}"
+          data-ng-click="setTheme('SCC')"
+        ></div>
+      </div>
+    </div>
+    <div
+      class="space-left only-mobile clickable"
+      data-ng-click="toggleMobileMenu()"
+    >
+      <triple-bar-svg
+        height="{{headerInfo.height}}"
+        width="{{headerInfo.width}}"
+        bar-height="{{headerInfo.barHeight}}"
+        active="headerInfo.active"
+      ></triple-bar-svg>
+    </div>
+  </div>
+  <div class="mobile-only mobile-menu" data-ng-style="mobileMenuStyle">
+    <div>
+      <div class="theme-choice-2 flex-row">
+        <div
+          class="secret-icon nep-icon"
+          data-ng-class="{'selected-theme': currentTheme === 'NEP'}"
+          data-ng-click="setTheme('NEP')"
+        ></div>
+        <div
+          class="secret-icon mcc-icon"
+          data-ng-class="{'selected-theme': currentTheme === 'MCC'}"
+          data-ng-click="setTheme('MCC')"
+        ></div>
+        <div
+          class="secret-icon rri-icon"
+          data-ng-class="{'selected-theme': currentTheme === 'RRI'}"
+          data-ng-click="setTheme('RRI')"
+        ></div>
+        <div
+          class="secret-icon scc-icon"
+          data-ng-class="{'selected-theme': currentTheme === 'SCC'}"
+          data-ng-click="setTheme('SCC')"
+        ></div>
+      </div>
+    </div>
+    <div class="clickable" data-ng-click="mobileScrollToSection('welcome')">
+      Welcome
+    </div>
+    <div class="clickable" data-ng-click="mobileScrollToSection('treatMenu')">
+      Treats
+    </div>
+    <div class="clickable" data-ng-click="mobileScrollToSection('foodMenu')">
+      Food
+    </div>
+  </div>
+</div>

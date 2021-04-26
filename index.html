@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html lang="en" ng-app="myApp" class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html lang="en" ng-app="myApp" class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html lang="en" ng-app="myApp" class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html lang="en" ng-app="myApp" class="no-js">
+  <!--<![endif]-->
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Mockup #1</title>
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      rel="icon"
+      href="images/little-ice-cream-guy.png"
+      type="image/icon type"
+    />
+    <link
+      rel="stylesheet"
+      href="lib/html5-boilerplate/dist/css/normalize.css"
+    />
+    <link rel="stylesheet" href="lib/html5-boilerplate/dist/css/main.css" />
+    <link rel="stylesheet" href="app.css" />
+    <script src="lib/html5-boilerplate/dist/js/vendor/modernizr-2.8.3.min.js"></script>
+  </head>
+  <body data-ng-controller="myCtrl">
+    <header
+      set-theme="setTheme"
+      current-theme="currentTheme"
+      scroll-to-section="scrollToSection"
+    ></header>
+
+    <div class="tab-wrapper">
+      <tab-view current-tab="selectedTab">
+        <tab
+          id="welcome-tab"
+          name="Welcome"
+          url="components/welcome/welcome.html"
+          shadow="dark-strawberry"
+          current-theme="{{currentTheme}}"
+        ></tab>
+        <tab
+          id="treat-menu-tab"
+          name="Treat Menu"
+          url="components/treat-menu/treat-menu.html"
+          shadow="dark-vanilla"
+        ></tab>
+        <tab
+          id="food-menu-tab"
+          name="Food Menu"
+          url="components/food-menu/food-menu.html"
+          shadow="chocolate"
+        ></tab>
+      </tab-view>
+    </div>
+
+    <big-image-box class="top-layer"></big-image-box>
+
+    <footer></footer>
+
+    <!--[if lt IE 7]>
+      <p class="browsehappy">
+        You are using an <strong>outdated</strong> browser. Please
+        <a href="http://browsehappy.com/">upgrade your browser</a> to improve
+        your experience.
+      </p>
+    <![endif]-->
+
+    <!-- In production use:
+  <script src="//ajax.googleapis.com/ajax/libs/angularjs/x.x.x/angular.min.js"></script>
+  -->
+    <script src="lib/angular/angular.js"></script>
+    <script src="lib/angular-route/angular-route.js"></script>
+    <script src="lib/angular-resource/angular-resource.js"></script>
+    <script src="lib/angular-animate/angular-animate.js"></script>
+    <script src="core/tab-view/tab-view.module.js"></script>
+    <script src="core/tab-view/tab-view.directive.js"></script>
+    <script src="core/tab/tab.module.js"></script>
+    <script src="core/tab/tab.directive.js"></script>
+    <script src="core/block-list/block-list.module.js"></script>
+    <script src="core/block-list/block-list.directive.js"></script>
+    <script src="core/collapse-box/collapse-box.module.js"></script>
+    <script src="core/collapse-box/collapse-box.directive.js"></script>
+    <script src="core/menu-item/menu-item.module.js"></script>
+    <script src="core/menu-item/menu-item.directive.js"></script>
+    <script src="core/banner/banner.module.js"></script>
+    <script src="core/banner/banner.directive.js"></script>
+    <script src="core/image-viewer/image-viewer.module.js"></script>
+    <script src="core/image-viewer/image-viewer.directive.js"></script>
+    <script src="core/big-image-box/big-image-box.module.js"></script>
+    <script src="core/big-image-box/big-image-box.directive.js"></script>
+    <script src="core/info-card/info-card.module.js"></script>
+    <script src="core/info-card/info-card.directive.js"></script>
+    <script src="core/svgs/rectangle/rectangle.module.js"></script>
+    <script src="core/svgs/rectangle/rectangle.directive.js"></script>
+    <script src="core/svgs/plus-cross/plus-cross.module.js"></script>
+    <script src="core/svgs/plus-cross/plus-cross.directive.js"></script>
+    <script src="core/svgs/asterisk-cross/asterisk-cross.module.js"></script>
+    <script src="core/svgs/asterisk-cross/asterisk-cross.directive.js"></script>
+    <script src="core/svgs/triple-bar/triple-bar.module.js"></script>
+    <script src="core/svgs/triple-bar/triple-bar.directive.js"></script>
+    <script src="core/svgs/core.svgs.module.js"></script>
+    <script src="core/core.module.js"></script>
+    <script src="app.js"></script>
+    <script src="components/header/header.module.js"></script>
+    <script src="components/header/header.directive.js"></script>
+    <script src="components/footer/footer.module.js"></script>
+    <script src="components/footer/footer.directive.js"></script>
+    <script src="components/welcome/welcome.js"></script>
+    <script src="components/treat-menu/treat-menu.js"></script>
+    <script src="components/food-menu/food-menu.js"></script>
+    <script src="core/version/version.js"></script>
+    <script src="core/version/version-directive.js"></script>
+    <script src="core/version/interpolate-filter.js"></script>
+    <script src="https://unpkg.com/ionicons@5.1.2/dist/ionicons.js"></script>
+  </body>
+</html>

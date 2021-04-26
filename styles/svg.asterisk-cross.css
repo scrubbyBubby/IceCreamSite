@@ -1,0 +1,55 @@
+.clear-icon-1 {
+  transform: rotate(-45deg);
+}
+
+.clear-icon-2 {
+  transform: rotate(-45deg);
+}
+
+.clear-icon-3 {
+  transform: rotate(45deg);
+}
+
+.all-icon-1 {
+  transform: rotate(-240deg);
+}
+
+.all-icon-2 {
+  transform: rotate(-120deg);
+}
+
+.all-icon-3 {
+  transform: rotate(180deg);
+}
+
+.asterisk-cross > div {
+  text-align: center;
+  position: absolute;
+  transition: all 300ms ease-in-out;
+  cursor: pointer;
+  transform-origin: 50% 50%;
+}
+
+.active-ac-icon-1 {
+  transform: rotate(-45deg);
+}
+
+.active-ac-icon-2 {
+  transform: rotate(-45deg);
+}
+
+.active-ac-icon-3 {
+  transform: rotate(45deg);
+}
+
+.inactive-ac-icon-1 {
+  transform: rotate(-240deg);
+}
+
+.inactive-ac-icon-2 {
+  transform: rotate(-120deg);
+}
+
+.inactive-ac-icon-3 {
+  transform: rotate(180deg);
+}

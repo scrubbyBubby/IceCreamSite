@@ -1,0 +1,15 @@
+<div id="treats-section" data-ng-controller="TreatMenuCtrl">
+  <banner banner-object="softServeBannerObject"></banner>
+  <block-list block-list-object="toppingsBlockListObject"></block-list>
+  <collapse-box
+    data-ng-repeat="category in categories.catList"
+    collapse-box-object="categories[category]"
+  >
+    <menu-item
+      class="collapse-item"
+      data-ng-repeat="item in categories[category].items"
+      item-name="{{item}}"
+      menu-item-object="categories[category][item]"
+    ></menu-item>
+  </collapse-box>
+</div>

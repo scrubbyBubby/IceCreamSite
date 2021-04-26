@@ -1,0 +1,27 @@
+.main-view {
+  width: 100%;
+  text-align: normal;
+  position: relative;
+  display: inline-block;
+  overflow-y: hidden;
+}
+
+@media (min-width: 960px) {
+  .main-view {
+    position: static;
+    width: calc(100% - 2em);
+    padding: 0 1em 0 1em;
+    max-width: calc(100% - 200px);
+  }
+}
+
+.content-view {
+  padding: 2em 0 1em 0;
+  overflow: hidden;
+}
+
+@media (min-width: 960px) {
+  .content-view {
+    padding: 2em 1em 1em 1em;
+  }
+}

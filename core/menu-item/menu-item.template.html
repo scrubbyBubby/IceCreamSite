@@ -1,0 +1,31 @@
+<div class="menu-item flex-row">
+  <div class="flex-column menu-item-text">
+    <div class="menu-item-name">{{itemName}}</div>
+    <div data-ng-if="menuItemObject.description" class="menu-item-description">
+      {{menuItemObject.description}}
+    </div>
+    <div data-ng-if="specialInfo" class="menu-item-special-info">
+      {{specialInfo}}
+    </div>
+  </div>
+  <div
+    data-ng-if="menuItemObject.price"
+    class="menu-item-price"
+    style="min-width: 15%"
+  >
+    {{menuItemObject.price}}
+  </div>
+  <div
+    data-ng-if="menuItemObject.prices"
+    class="flex-column menu-item-tiny-prices"
+    style="min-width: 15%"
+  >
+    <div
+      class="price-option"
+      data-ng-repeat="(item,price) in menuItemObject.prices"
+    >
+      <div style="display: block; font-weight: 600">{{item}}</div>
+      <div style="display: block">{{price}}</div>
+    </div>
+  </div>
+</div>

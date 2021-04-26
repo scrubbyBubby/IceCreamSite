@@ -1,0 +1,29 @@
+.plus-cross {
+}
+
+.plus-cross > div {
+  text-align: center;
+  position: absolute;
+  transition: all 300ms ease-in-out;
+  cursor: pointer;
+}
+
+.active-pc-icon {
+  transform: rotate(-45deg);
+  transform-origin: 50% 50%;
+}
+
+.inactive-pc-icon {
+  transform: rotate(0deg);
+  transform-origin: 50% 50%;
+}
+
+.active-pc-icon-2 {
+  transform: rotate(-135deg);
+  transform-origin: 50% 50%;
+}
+
+.inactive-pc-icon-2 {
+  transform: rotate(90deg);
+  transform-origin: 50% 50%;
+}

@@ -1,0 +1,113 @@
+.block-list-container {
+  border: 2px solid var(--chocolate);
+  border-radius: 10px;
+  margin-bottom: 20px;
+  position: relative;
+  padding: 0 5px;
+  overflow: hidden;
+}
+
+@media (max-width: 700px) {
+  .block-list-container {
+    border-radius: 0;
+  }
+}
+
+.block-list-cat-header {
+  font-size: 2em;
+  font-weight: 500;
+  padding: 0.1em 0 0.2em 0;
+  text-align: left;
+  text-indent: 30px;
+}
+
+.block-list-item-header {
+  font-size: 1.5em;
+  font-weight: 500;
+  padding: 0.1em 0 0.2em 0;
+  text-align: left;
+  text-indent: 30px;
+}
+
+.block-list-category-box {
+  background-color: var(--strawberry);
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: flex-start;
+  align-items: stretch;
+  border-top: 2px solid var(--chocolate);
+  border-bottom: 2px solid var(--chocolate);
+  padding: 1px 0;
+  margin-bottom: 5px;
+  transition: all 200ms ease-in-out;
+}
+
+.category-box {
+  position: relative;
+  z-index: 4;
+  padding: 2px 5px;
+  display: grid;
+  place-items: center;
+  border: 1px solid white;
+  outline: 1px solid white;
+  box-sizing: border-box;
+  flex-grow: 1;
+  color: var(--very-dark-chocolate);
+  transition: all 100ms ease-in-out;
+  cursor: pointer;
+  white-space: nowrap;
+  max-width: 20%;
+  min-width: max-content;
+  min-height: 50px;
+}
+
+.category-box:hover {
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
+.clear-category-box {
+  min-width: 50px;
+  font-size: 30px;
+  font-weight: 500;
+}
+
+.active-category {
+  background-color: var(--dark-strawberry);
+  color: white;
+}
+
+.active-category:hover {
+  background-color: rgba(0, 0, 0, 0.15);
+}
+
+.block-list-item-box {
+  max-width: 100%;
+}
+
+.item-box {
+  position: absolute;
+  background-color: var(--vanilla);
+  display: grid;
+  place-items: center;
+  padding: 2px 10px;
+  max-width: 150px;
+  height: 50px;
+  border: 1px solid var(--dark-chocolate);
+  outline: 1px solid var(--dark-chocolate);
+  flex-grow: 1;
+  transition: opacity 0ms linear, all 200ms linear;
+}
+
+.block-list-cover {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: white;
+  z-index: 5;
+  color: var(--dark-deep-strawberry);
+  top: 0;
+  left: 0;
+  display: grid;
+  place-items: center;
+  font-size: 2em;
+}

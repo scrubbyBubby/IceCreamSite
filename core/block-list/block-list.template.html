@@ -1,0 +1,40 @@
+<div class="block-list-container" id="{{blockId}}">
+  <div class="block-list-cat-header">{{catHeader}}</div>
+
+  <div class="block-list-category-box">
+    <div
+      class="clear-category-box category-box"
+      data-ng-click="handleCategoryWildcard()"
+    >
+      <asterisk-cross-svg
+        width="{{asteriskInfo.size}}"
+        height="{{asteriskInfo.size}}"
+        bar-height="{{asteriskInfo.width}}"
+        active="activeCategoryList.length > 0"
+      ></asterisk-cross-svg>
+    </div>
+
+    <div
+      data-ng-repeat="category in categoryList"
+      class="category-box"
+      data-ng-class="{'active-category': activeCategoryList.indexOf(category) !== -1}"
+      data-ng-click="toggleCategoryFilter(category)"
+    >
+      {{category}}
+    </div>
+  </div>
+
+  <div class="block-list-item-header">{{itemHeader}}</div>
+
+  <div class="block-list-item-box" id="{{blockId + '-item-box'}}">
+    <div
+      data-ng-repeat="item in itemList"
+      class="item-box"
+      id="{{itemIds[item]}}"
+    >
+      {{itemObject[item].displayName}}
+    </div>
+  </div>
+
+  <div class="block-list-cover" id="{{blockId + '-cover'}}">Loading...</div>
+</div>

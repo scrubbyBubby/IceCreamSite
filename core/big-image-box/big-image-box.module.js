@@ -1,0 +1,1 @@
+angular.module('core.big-image-box',[])

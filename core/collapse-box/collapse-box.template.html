@@ -1,0 +1,22 @@
+<div class="collapse-box">
+  <div class="collapse-box-header flex-column" data-ng-click="toggle()">
+    <div class="flex-row collapse-box-header-sub-wrapper">
+      <div class="collapse-box-title">{{title}}</div>
+      <div class="collapse-box-icon-wrapper">
+        <plus-cross-svg
+          width="{{plusCrossInfo.width}}"
+          height="{{plusCrossInfo.height}}"
+          active="open"
+          bar-height="{{plusCrossInfo.barHeight}}"
+        ></plus-cross-svg>
+      </div>
+    </div>
+    <div class="description" data-ng-if="description">{{description}}</div>
+    <div class="info" data-ng-if="info">{{info}}</div>
+    <div class="special-info" data-ng-if="specialInfo">{{specialInfo}}</div>
+  </div>
+  <data-ng-transclude
+    class="collapse-items"
+    data-ng-class="{'hiding': !open}"
+  ></data-ng-transclude>
+</div>

@@ -1,0 +1,62 @@
+.wide-centered-wrapper {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  margin: 20px 0;
+}
+
+.info-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 10px 20px;
+  font-size: 1.2rem;
+  border-radius: 12px;
+  box-shadow: 0 0 10px 5px var(--chocolate);
+  margin: 0 20px;
+}
+
+@media (max-width: 800px) {
+  .info-card {
+    border-radius: 0;
+    margin: 0;
+  }
+}
+
+.info-card > div {
+  padding: 5px;
+  font-size: 1.7rem;
+}
+
+.info-greeting {
+}
+
+.info-hours {
+}
+
+.info-address .info-address > a,
+.info-address div {
+  text-decoration: none !important;
+  color: var(--dark-strawberry) !important;
+  cursor: pointer;
+}
+
+.info-address > a {
+  gap: 0.5rem;
+  text-decoration: none !important;
+}
+
+.info-email,
+.info-email a {
+  text-decoration: none !important;
+  color: var(--dark-vanilla) !important;
+  cursor: pointer;
+}
+
+.info-phone,
+.info-phone a {
+  text-decoration: none !important;
+  color: var(--chocolate) !important;
+  cursor: pointer;
+}

@@ -1,0 +1,14 @@
+<div id="food-section" data-ng-controller="FoodMenuCtrl">
+  <banner banner-object="mealBannerObject"></banner>
+  <collapse-box
+    data-ng-repeat="category in categories.catList"
+    collapse-box-object="categories[category]"
+  >
+    <menu-item
+      class="collapse-item"
+      data-ng-repeat="item in categories[category].items"
+      item-name="{{item}}"
+      menu-item-object="categories[category][item]"
+    ></menu-item>
+  </collapse-box>
+</div>
