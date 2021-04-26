@@ -10,13 +10,17 @@ angular.module('myApp', [
   'myApp.treat-menu',
   'myApp.food-menu',
   'myApp.version'
-]).
-config(['$locationProvider', '$routeProvider', function($locationProvider, $routeProvider) {
+])
+
+/*
+.config(['$locationProvider', '$routeProvider', function($locationProvider, $routeProvider) {
   $locationProvider.hashPrefix('!');
 
   $routeProvider
   .otherwise({redirectTo: '/not-a-real-site'});
 }]);
+
+*/
 
 angular.module("myApp")
   .controller("myCtrl", [
